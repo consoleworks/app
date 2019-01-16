@@ -20,7 +20,7 @@ export default () => (
             />
         </Menu.Item>
         <Menu.Item key="user" className="menu-item menu-item-right">
-            <Icon type="user" />
+            <Icon type="plus" />
         </Menu.Item>
     </Menu>
 )
