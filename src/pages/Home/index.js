@@ -6,6 +6,8 @@ import DynamoDB from '../../components/Widget/DynamoDB';
 import EC2 from '../../components/Widget/EC2';
 import S3 from '../../components/Widget/S3';
 import { getTopItem } from '../../config/actions/dynamodb';
+import { ProgressWidget } from '../../components/Widgets/ProgressWidget';
+
 export default class Home extends React.Component {
     constructor() {
         super();
@@ -38,7 +40,8 @@ export default class Home extends React.Component {
                 </div>
                 <div className="grid-item" key="d" onMouseDown={e => e.stopPropagation()}>
                     <Widget title="Payment Gateway">
-
+                        <ProgressWidget percent={50} status="active" title="Migration Status" type="circle" />
+                        <ProgressWidget percent={1} status="exception" title="Test Coverage" type="circle" />
                     </Widget>
                 </div>
             </GridLayout>

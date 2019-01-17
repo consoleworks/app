@@ -1,14 +1,13 @@
 import React from 'react';
 import Widget from './index';
 import { Tabs } from 'antd';
+import { ProgressWidget } from '../Widgets/ProgressWidget';
 const TabPane = Tabs.TabPane;
 
 export default () => (
     <Widget title="S3" >
-        <Tabs defaultActiveKey="1">
-            <TabPane tab="Table 1" key="1">Content of Tab Pane 1</TabPane>
-            <TabPane tab="Table 2" key="2">Content of Tab Pane 2</TabPane>
-            <TabPane tab="Table 3" key="3">Content of Tab Pane 3</TabPane>
-        </Tabs>
+        <ProgressWidget percent={50} status="active" title="Sprint Progress" />
+        <ProgressWidget percent={100} status="success" title="Code Coverage" />
+        <ProgressWidget percent={20} status="exception" title="Deployment Status" />
     </Widget>
 )

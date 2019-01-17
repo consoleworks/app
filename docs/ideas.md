@@ -64,3 +64,6 @@
     * Clicking on a word highlights references to same word
     * Collapse stack traces by default
 * The entire state of a dashboard should be serializable to JSON
+
+
+
