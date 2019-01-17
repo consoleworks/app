@@ -37,7 +37,7 @@ export default class Home extends React.Component {
                     <S3 />
                 </div>
                 <div className="grid-item" key="d" onMouseDown={e => e.stopPropagation()}>
-                    <Widget titleMenuItems={[]} title="Payment Gateway">
+                    <Widget title="Payment Gateway">
 
                     </Widget>
                 </div>

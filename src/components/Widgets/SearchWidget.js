@@ -9,7 +9,11 @@ export class SearchWidget extends React.Component {
     }
     onSearch(props) {
         return value => {
-            const searchResult = props.action({ id: value, ...props });
+            let searchResult = props.action({ id: value, ...props });
+            const { transform } = this.props;
+            if (transform) {
+                searchResult = transform(searchResult);
+            }
             this.setState({ hasResult: true, result: searchResult });
         }
     }

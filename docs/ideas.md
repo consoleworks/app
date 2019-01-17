@@ -29,7 +29,8 @@
         * Each action consists of
             * A function that takes some value and returns some other value
             * A specified schema for its input and output
-
+* Having a single view should be equivalent not having a view at all
+* Maximize a single widget like grafana
 * Each widget can 
     * Display static text
     * graphs
