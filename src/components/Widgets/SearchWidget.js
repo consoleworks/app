@@ -22,7 +22,7 @@ export class SearchWidget extends React.Component {
             <Search
                 onMouseDown={e => e.stopPropagation()}
                 onSearch={this.onSearch(this.props)}
-                style={{ width: 200, marginRight: 10 }}
+                style={{ margin: 10 }}
             />
         )
         return !this.state.hasResult ? search : (

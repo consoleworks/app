@@ -10,7 +10,7 @@ export const SingleStatWidget = (props) => {
     const color = props.color || "#000000";
     return (
         <Card
-            style={{ width: 200, margin: 10, background, color }}
+            style={{ margin: 10, background, color }}
             size="small"
         >
             {actionResult}
