@@ -9,7 +9,7 @@ import { getTopItem } from '../../config/actions/dynamodb';
 export default class Home extends React.Component {
     constructor() {
         super();
-        this.state = { data: [] };
+        this.state = { data: [], isDraggable: false };
     }
     componentDidMount() {
         getTopItem()

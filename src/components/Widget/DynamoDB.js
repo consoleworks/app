@@ -13,7 +13,7 @@ export default () => (
                 <SearchWidget action={getItem} tableName="Purchase Session" transform={data => data.id} />
             </Col>
             <Col span={12}>
-                <SingleStatWidget background="#673ab7" color="#fff" action={topCommitSha} />
+                <SingleStatWidget action={topCommitSha} />
             </Col>
         </Row>
 

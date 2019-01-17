@@ -3,7 +3,7 @@ import './index.less';
 import { Card, Row, Col } from 'antd';
 
 const extras = (
-    <i className="extras fa fa-clone"></i>
+    <i className="extras fa fa-ellipsis-v"></i>
 )
 
 export default ({ title, children }) => (
