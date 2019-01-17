@@ -7,6 +7,7 @@ const Search = Input.Search;
 export default () => (
     <Menu
         mode="horizontal"
+        className="top-menu"
     >
         <Menu.Item key="logo" className="menu-item">
             <img src={Triangular} className="logo" alt="" />

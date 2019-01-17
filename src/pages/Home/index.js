@@ -2,6 +2,9 @@ import React from 'react';
 import GridLayout from 'react-grid-layout';
 import './index.less';
 import Widget from '../../components/Widget';
+import DynamoDB from '../../components/Widget/DynamoDB';
+import EC2 from '../../components/Widget/EC2';
+import S3 from '../../components/Widget/S3';
 
 export default class Home extends React.Component {
     render() {
@@ -17,16 +20,18 @@ export default class Home extends React.Component {
         return (
             <GridLayout className="layout" layout={layout} cols={4} rowHeight={height / 4} width={width}>
                 <div className="grid-item" key="a">
-                    <Widget title="Dynamo DB" />
+                    <DynamoDB />
                 </div>
                 <div className="grid-item" key="b">
-                    <Widget title="EC2" />
+                    <EC2 />
                 </div>
                 <div className="grid-item" key="c">
-                    <Widget title="S3" />
+                    <S3 />
                 </div>
                 <div className="grid-item" key="d">
-                    <Widget title="Cloud Watch" />
+                    <Widget titleMenuItems={[]} title="Payment Gateway">
+
+                    </Widget>
                 </div>
             </GridLayout>
         )
