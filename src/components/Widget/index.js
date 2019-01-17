@@ -7,12 +7,13 @@ const extras = (
 )
 
 export default ({ title, children }) => (
-    <Card
-        className="widget"
-        size="small"
-        title={title}
-        extra={extras}
-    >
-        {children}
-    </Card>
+    <div className="widget">
+        <Card
+            size="small"
+            title={title}
+            extra={extras}
+        >
+            {children}
+        </Card>
+    </div>
 )

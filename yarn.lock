@@ -9821,6 +9821,11 @@ react-app-rewired@^1.6.2:
     cross-spawn "^5.1.0"
     dotenv "^4.0.0"
 
+react-data-grid@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/react-data-grid/-/react-data-grid-5.0.5.tgz#529f5acd4750ae0461e9da66f9f30d6f597eed76"
+  integrity sha512-OR4LDoOpN4yj3NexaxYFS2OEIYFUk2V5lascPTHgtTMwwkb163tEPqQSertkv2YAJu+YBzIm8epW8+UMip1LPw==
+
 react-dev-utils@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-6.1.1.tgz#a07e3e8923c4609d9f27e5af5207e3ca20724895"

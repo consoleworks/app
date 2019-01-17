@@ -1,8 +1,16 @@
 .widget {
-    height: 100%;
     border: none;
+    height: 100%;
+    display: block;
+    overflow: scroll;
     &:hover {
         border: 1px solid rgba(0,0,0,0.1);
+    }
+    .react-grid-Viewport {
+        overflow: scroll !important
+    }
+    .ant-card {
+        height: 100%;
     }
 }
 .extras {
