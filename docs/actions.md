@@ -5,3 +5,4 @@
 * Github
 * Databases
 * APIs of popular websites
+* Calendar widget
