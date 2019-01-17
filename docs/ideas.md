@@ -12,7 +12,23 @@
 * Each widget will have a list of ahort cut buttons that one can configure
 * Widgets can be easily cloned
 * A widget is a collection of widget items
-
+* Each widget will have a configuration files
+    * This defines with widget items like
+        * Title
+        * Layout
+            * Can be tabs,
+            * Simple layout
+        * Specifies the list of widget items to be used in the widget
+        * Widget items are defined in their own files
+        * Each widget item definition consists of 
+            * An action
+            * A display item
+        * Each display item has
+            * A function that takes value and renders some html
+            * Has a specified scheme for its input
+        * Each action consists of
+            * A function that takes some value and returns some other value
+            * A specified schema for its input and output
 
 * Each widget can 
     * Display static text
