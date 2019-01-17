@@ -4,6 +4,7 @@
     "private": true,
     "dependencies": {
         "antd": "^3.12.3",
+        "aws-sdk": "^2.389.0",
         "babel-plugin-import": "^1.11.0",
         "react": "^16.7.0",
         "react-app-rewire-less": "^2.1.3",

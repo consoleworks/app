@@ -5,8 +5,16 @@ import Widget from '../../components/Widget';
 import DynamoDB from '../../components/Widget/DynamoDB';
 import EC2 from '../../components/Widget/EC2';
 import S3 from '../../components/Widget/S3';
-
+import { getTopItem } from '../../config/actions/dynamodb';
 export default class Home extends React.Component {
+    constructor() {
+        super();
+        this.state = { data: [] };
+    }
+    componentDidMount() {
+        getTopItem()
+            .then(json => this.setState({ data: json }));
+    }
     render() {
         const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);

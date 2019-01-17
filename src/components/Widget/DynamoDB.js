@@ -1,8 +1,8 @@
 import React from 'react';
 import Widget from './index';
-
-import { Card, Button, Icon, Dropdown, Menu, Row, Col, Tabs, Input, Select } from 'antd';
-const ButtonGroup = Button.Group;
+import { SearchWidget } from "../Widgets/SearchWidget";
+import { getItem } from '../../actions/GetItem';
+import { Tabs, Input, Select } from 'antd';
 const TabPane = Tabs.TabPane;
 const Search = Input.Search;
 const Option = Select.Option;
@@ -29,7 +29,9 @@ const titleMenuItems = [
 export default () => (
     <Widget title="Dynamo DB" titleMenuItems={titleMenuItems} >
         <Tabs defaultActiveKey="1">
-            <TabPane tab="Table 1" key="1">Content of Tab Pane 1</TabPane>
+            <TabPane tab="Table 1" key="1">
+                <SearchWidget action={getItem} tableName="Purchase Session" />
+            </TabPane>
             <TabPane tab="Table 2" key="2">Content of Tab Pane 2</TabPane>
             <TabPane tab="Table 3" key="3">Content of Tab Pane 3</TabPane>
         </Tabs>

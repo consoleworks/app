@@ -1,8 +1,7 @@
 import React from 'react';
 import Widget from './index';
 
-import { Card, Button, Icon, Dropdown, Menu, Row, Col, Tabs, Input, Select } from 'antd';
-const ButtonGroup = Button.Group;
+import { Tabs, Input, Select } from 'antd';
 const TabPane = Tabs.TabPane;
 const Search = Input.Search;
 const Option = Select.Option;
