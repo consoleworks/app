@@ -11,7 +11,9 @@
         "react-app-rewired": "^1.6.2",
         "react-dom": "^16.7.0",
         "react-grid-layout": "^0.16.6",
-        "react-scripts": "2.1.1"
+        "react-redux": "^6.0.0",
+        "react-scripts": "2.1.1",
+        "redux": "^4.0.1"
     },
     "main": "src/electron-starter.js",
     "scripts": {

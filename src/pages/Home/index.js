@@ -26,7 +26,7 @@ export default class Home extends React.Component {
             { i: 'd', x: 2, y: 2, w: 2, h: 2 },
         ];
         return (
-            <GridLayout verticalCompact={false} className="layout" layout={layout} cols={4} rowHeight={height / 4} width={width}>
+            <GridLayout className="layout" layout={layout} cols={4} rowHeight={height / 4} width={width}>
                 <div className="grid-item" key="a" onMouseDown={e => e.stopPropagation()}>
                     <DynamoDB />
                 </div>

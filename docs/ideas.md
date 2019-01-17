@@ -52,3 +52,15 @@
 * Whenever the action coupled with a widget item is executed, the result is passed to the widget item
     * The widget item can use this to render any html wanted (This would be a set of supported html items)
     * The html will be rerendered whenever the widget item is refreshed / or rerun according to configuration
+* Each widget will have an edit menu which on clicked can ask for parameters visually
+* A complex widget can encompass multiple small widgets
+* Each panel can have panel level information configured. This information will be sent to all widgets inside th panel.
+    * Like AWS Region Selector
+* Row and Column widgets
+* Notifications which trigger on specific state of a widget
+* Execute shell messages and do some actions
+* Run Terminal commands
+    * Highlight messages written to streams accordingly
+    * Clicking on a word highlights references to same word
+    * Collapse stack traces by default
+    

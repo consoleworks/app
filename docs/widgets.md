@@ -9,3 +9,6 @@
 * A charts widget
 * Grafana plugins
 * Alert list
+* Action widget that on doing a specific action, does a list of defined steps
+    * Clicking a button send a request, initializes a database etc
+* Progress Widget

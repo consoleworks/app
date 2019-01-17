@@ -6,9 +6,11 @@ export const SingleStatWidget = (props) => {
     if (props.transform) {
         actionResult = props.transform(actionResult);
     }
+    const background = props.background || "#ffffff";
+    const color = props.color || "#000000";
     return (
         <Card
-            style={{ width: 200, margin: 10 }}
+            style={{ width: 200, margin: 10, background, color }}
             size="small"
         >
             {actionResult}
