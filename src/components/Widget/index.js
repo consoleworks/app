@@ -5,22 +5,12 @@ import { Card, Row, Col } from 'antd';
 const extras = (
     <i className="extras fa fa-clone"></i>
 )
-const titleMenu = (title, titleMenuItems) => (
-    <Row>
-        <Col span={8}>{title}</Col>
-        <Col span={16}>
-            {
-                titleMenuItems.map((item, index) => <span key={index}>{item}</span>)
-            }
-        </Col>
-    </Row>
-)
 
-export default ({ title, titleMenuItems, children }) => (
+export default ({ title, children }) => (
     <Card
         className="widget"
         size="small"
-        title={titleMenu(title, titleMenuItems)}
+        title={title}
         extra={extras}
     >
         {children}

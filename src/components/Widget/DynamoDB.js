@@ -2,32 +2,11 @@ import React from 'react';
 import Widget from './index';
 import { SearchWidget } from "../Widgets/SearchWidget";
 import { getItem } from '../../actions/GetItem';
-import { Tabs, Input, Select } from 'antd';
+import { Tabs } from 'antd';
 const TabPane = Tabs.TabPane;
-const Search = Input.Search;
-const Option = Select.Option;
-const titleMenuItems = [
-    <Search
-        placeholder="Search an Item"
-        onSearch={value => console.log(value)}
-        style={{ width: 200, marginRight: 10 }}
-    />,
-    <Select
-        showSearch
-        defaultValue="us-east-1"
-        style={{ width: 200 }}
-        placeholder="Select a region"
-        optionFilterProp="children"
-        filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
-    >
-        <Option value="us-east-1">us-east-1</Option>
-        <Option value="us-east-2">us-east-2</Option>
-        <Option value="us-east-3">us-east-3</Option>
-    </Select>
-]
 
 export default () => (
-    <Widget title="Dynamo DB" titleMenuItems={titleMenuItems} >
+    <Widget title="Dynamo DB" >
         <Tabs defaultActiveKey="1">
             <TabPane tab="Table 1" key="1">
                 <SearchWidget action={getItem} tableName="Purchase Session" />

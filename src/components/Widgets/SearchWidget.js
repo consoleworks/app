@@ -14,20 +14,19 @@ export class SearchWidget extends React.Component {
         }
     }
     render() {
-        return !this.state.hasResult ? (
+        const search = (
             <Search
+                onMouseDown={e => e.stopPropagation()}
                 onSearch={this.onSearch(this.props)}
-                style={{ width: 200 }}
+                style={{ width: 200, marginRight: 10 }}
             />
-        ) : (
-                <div>
-                    <Search
-                        onSearch={this.onSearch(this.props)}
-                        style={{ width: 200 }}
-                    />
-                    {SearchResultDisplay(this.state.result)}
-                </div>
-            )
+        )
+        return !this.state.hasResult ? search : (
+            <div>
+                {search}
+                {SearchResultDisplay(this.state.result)}
+            </div>
+        )
     }
 }
 export const SearchResultDisplay = (result) => (
